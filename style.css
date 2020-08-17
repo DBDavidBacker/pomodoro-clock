@@ -1,0 +1,86 @@
+#root{
+  text-align: center;
+ width: 1000px;
+  margin: auto;
+  font-family: 'Major Mono Display', monospace;
+}
+
+#main-panel{
+  width: 700px;
+ 
+   display: grid;
+   grid-template-columns: 250px 200px 250px ;
+  grid-template-rows: 75px 75px 75px 75px;
+  grid-template-areas:"topL topC topR"
+                       "middleL middleC middleR"
+                       "bottomL bottomC bottomR"
+                        "blah blah blah";
+  margin: auto;
+ 
+}
+
+
+#main-panel button{
+  width: 45px;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+#session-control{
+  display: flex;
+    margin: auto;
+ grid-area: middleL;
+ padding-top: 10px;
+}
+
+#break-control{
+  display: flex;
+  margin: auto;
+  grid-area: middleR;
+  padding-top: 10px;
+}
+
+#displays{
+   
+    grid-area: bottomC;
+ 
+  margin: auto;
+}
+
+#session-label{grid-area: topL}
+#break-label{grid-area: topR}
+
+button{
+   background: none;
+      outline: none;
+      border: none;
+  width: 50px;
+    height: 45px;
+  background-color: #e37118;
+}
+
+#start_stop{
+  margin-right:10px;
+}
+#reset{
+  margin-left:10px;
+}
+
+button:hover{
+  opacity: .8;
+}
+
+#timer-label{
+  font-size: 25px;
+}
+
+#time-left{
+  font-size: 45px;
+  font-weight: bold;
+}
+
+h4{
+  padding-top: 10px;
+}
